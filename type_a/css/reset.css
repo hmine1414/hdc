@@ -94,7 +94,7 @@ body.intro::after {position:absolute; left:50%; bottom:3%; width:52px; height:52
 .intropage .intro-innerbox .indexlist ul li .pic {display:block; margin-bottom:40px}
 .intropage .intro-innerbox .indexlist ul li .pic a {display:block}
 .intropage .intro-innerbox .indexlist ul li .pic img {box-shadow:10px 10px 40px rgba(0,0,0,0.15), -10px 0 40px rgba(0,0,0,0.15)}
-.intropage .intro-innerbox .indexlist ul li div a {margin:0 20px; font-size:48px; font-weight:800; color:#386773}
+.intropage .intro-innerbox .indexlist ul li div a {margin:0 20px; font-size:48px; font-weight:800; color:rgba(255,255,255,0.2)}
 .intropage .intro-innerbox .indexlist ul li div a.active {color:#fff}
 .intropage .intro-innerbox .indexlist ul li div a:hover {color:#fff}
 

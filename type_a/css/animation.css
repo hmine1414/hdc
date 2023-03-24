@@ -5,17 +5,9 @@
         transform: translateX(0);
         opacity: 1;
     }
-    23% {
-        transform: translateX(17px);
+    55% {
+        transform: translateX(10px);
         opacity: 1;
-    }
-    24%, 80% {
-        transform: translateX(-22px);
-        opacity: 0;
-    }
-    81% {
-        opacity: 1;
-        transform: translateX(-22px);
     }
 }
 @-moz-keyframes arrow {
@@ -23,17 +15,9 @@
         transform: translateX(0);
         opacity: 1;
     }
-    23% {
-        transform: translateX(17px);
+    55% {
+        transform: translateX(6px);
         opacity: 1;
-    }
-    24%, 80% {
-        transform: translateX(-22px);
-        opacity: 0;
-    }
-    81% {
-        opacity: 1;
-        transform: translateX(-22px);
     }
 }
 @-ms-keyframes arrow {
@@ -41,17 +25,9 @@
         transform: translateX(0);
         opacity: 1;
     }
-    23% {
-        transform: translateX(17px);
+    55% {
+        transform: translateX(6px);
         opacity: 1;
-    }
-    24%, 80% {
-        transform: translateX(-22px);
-        opacity: 0;
-    }
-    81% {
-        opacity: 1;
-        transform: translateX(-22px);
     }
 }
 @-o-keyframes arrow {
@@ -59,17 +35,9 @@
         transform: translateX(0);
         opacity: 1;
     }
-    23% {
-        transform: translateX(17px);
+    55% {
+        transform: translateX(6px);
         opacity: 1;
-    }
-    24%, 80% {
-        transform: translateX(-22px);
-        opacity: 0;
-    }
-    81% {
-        opacity: 1;
-        transform: translateX(-22px);
     }
 }
 @keyframes arrow {
@@ -77,17 +45,9 @@
         transform: translateX(0);
         opacity: 1;
     }
-    23% {
-        transform: translateX(17px);
+    55% {
+        transform: translateX(6px);
         opacity: 1;
-    }
-    24%, 80% {
-        transform: translateX(-22px);
-        opacity: 0;
-    }
-    81% {
-        opacity: 1;
-        transform: translateX(-22px);
     }
 }
 

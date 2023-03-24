@@ -26,7 +26,7 @@
 
 	<div class="header hidden">
 		<div class="header-inner">
-			<div class="logo"><a href="index.html">현대건설 기술교육원</a></div>
+			<div class="logo"><a href="../index.html">현대건설 기술교육원</a></div>
 			<ul class="topmenu">
 				<li><a href="sub.html">교육원소개</a></li>
 				<li><a href="sub.html">교육과정</a></li>
@@ -50,8 +50,8 @@
 						<li>
 							<h1>
 								<p class="ani-txt-wrap"><span><strong>변화와 혁신을 추진</strong>하는 </span></p>
-								<p class="ani-txt-wrap"><span><strong>건설기술 인재를 양성</strong>하는데 </span></p>
-								<p class="ani-txt-wrap"><span>앞장서고 있습니다.</span></p>
+								<p class="ani-txt-wrap"><span><strong>건설기술 인재를</span></p>
+								<p class="ani-txt-wrap"><span><strong>양성합니다</span></p>
 							</h1>
 							<div class="bg-img"><img src="images/main/img_mainvisual_01.jpg" alt=""></div>
 						</li>
@@ -67,7 +67,7 @@
 					<div class="slider-paging">
 						<div class="paging-inner">
 							<span class="btnset"></span>
-							<span class="countpag"><strong>1</strong> / <em>2</em></span>
+							<span class="countpag"><strong id="mvCnt">1</strong> / <em id="mvTotal">2</em></span>
 							<div></div>
 						</div>
 						<button type="button" class="slick-stop" title="정지">정지</button>
@@ -75,13 +75,13 @@
 					<div class="edu-news">
 						<h1><a href="javascript:edunewsToggle()"><img src="images/main/txt_eduhddnews.png" alt=""></a></h1>
 						<div class="newslist">
-							<span class="newscnt"><strong>1</strong> / <em>5</em></span>
+							<span class="newscnt"><strong id="newsCnt">1</strong> / <em id="newsTotal">5</em></span>
 							<ul>
 								<li>
 									<dl>
 										<dt><strong>2023년 4월 개강 과정 <br>교육생 모집 공고</strong></dt>
 										<dd>
-											<p>2023년을 맞아 새로운 과정에 참여하실 분을 모집합니다. 플랜트 전기ㆍ계장실무, 안전보건관리, 플랜트설계 교육생을 모집합니다.</p>
+											<p>2023년을 맞아 새로운 과정에 참여하실 분을 모집합니다.<br>플랜트전기·계장실무, 안전보건관리, 플랜트설계 ....</p>
 											<span>2023.03.20</span>
 										</dd>
 									</dl>
@@ -90,7 +90,7 @@
 									<dl>
 										<dt><strong>2023년 6월 개강 과정 <br>교육생 모집 공고</strong></dt>
 										<dd>
-											<p>2023년을 맞아 새로운 과정에 참여하실 분을 모집합니다. 플랜트 전기ㆍ계장실무, 안전보건관리, 플랜트설계 교육생을 모집합니다.</p>
+											<p>2023년을 맞아 새로운 과정에 참여하실 분을 모집합니다.<br>플랜트전기·계장실무, 안전보건관리, 플랜트설계 ....</p>
 											<span>2023.03.20</span>
 										</dd>
 									</dl>
@@ -99,7 +99,34 @@
 									<dl>
 										<dt><strong>2022년 10월 개강 과정 <br>교육생 모집 공고</strong></dt>
 										<dd>
-											<p>2023년을 맞아 새로운 과정에 참여하실 분을 모집합니다. 플랜트 전기ㆍ계장실무, 안전보건관리, 플랜트설계 교육생을 모집합니다.</p>
+											<p>2023년을 맞아 새로운 과정에 참여하실 분을 모집합니다.<br>플랜트전기·계장실무, 안전보건관리, 플랜트설계 ....</p>
+											<span>2023.03.20</span>
+										</dd>
+									</dl>
+								</li>
+								<li>
+									<dl>
+										<dt><strong>2023년 4월 개강 과정 <br>교육생 모집 공고</strong></dt>
+										<dd>
+											<p>2023년을 맞아 새로운 과정에 참여하실 분을 모집합니다.<br>플랜트전기·계장실무, 안전보건관리, 플랜트설계 ....</p>
+											<span>2023.03.20</span>
+										</dd>
+									</dl>
+								</li>
+								<li>								
+									<dl>
+										<dt><strong>2023년 6월 개강 과정 <br>교육생 모집 공고</strong></dt>
+										<dd>
+											<p>2023년을 맞아 새로운 과정에 참여하실 분을 모집합니다.<br>플랜트전기·계장실무, 안전보건관리, 플랜트설계 ....</p>
+											<span>2023.03.20</span>
+										</dd>
+									</dl>
+								</li>
+								<li>
+									<dl>
+										<dt><strong>2022년 10월 개강 과정 <br>교육생 모집 공고</strong></dt>
+										<dd>
+											<p>2023년을 맞아 새로운 과정에 참여하실 분을 모집합니다.<br>플랜트전기·계장실무, 안전보건관리, 플랜트설계 ....</p>
 											<span>2023.03.20</span>
 										</dd>
 									</dl>
@@ -113,7 +140,30 @@
 					<div class="quickmenu"><img src="images/main/img_quickmenu.png" alt=""></div>
 					<div class="innerbox">
 						<h1>김현대님 <br>맞춤 교육 컨텐츠</h1>
-						<div><img src="images/main/img_privateedu.png" alt=""></div>
+						<div class="custom-edulist">
+							<ul>
+								<li>
+									<a href="#">Smart City</a>
+									<span>건설시공실무 및 프로젝트 수업을 통한<br>스마트시티 건설/운영 관리자를 양성</span>
+								</li>
+								<li>
+									<a href="#">안전보건관리</a>
+									<span>안전, 보건분야 전문가로 성장하기 위한<br>이론과 실무적 감각을 양성하는 과정</span>
+								</li>
+								<li>
+									<a href="#">BIM건설관리</a>
+									<span>건설 전 분야에 적용할 수 있는<br>전문인력 양성하는 과정</span>
+								</li>
+								<li>
+									<a href="#">건설설비시공실무</a>
+									<span>자동화 설비의 시공 및 유지보수를 위한<br>전문적인 전기 기술자를 양성하는 과정</span>
+								</li>
+								<li>
+									<a href="#">건설공사관리</a>
+									<span>시공 및 공무, 공정관리자로 취업이<br>가능한 건설인재를 양성하는 과정</span>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 				<div class="section educourse">
@@ -130,7 +180,7 @@
 									<span class="pic"><img src="images/main/img_course_01.jpg"></span><strong>BIM건설관리</strong>
 									<div><strong>BIM건설관리</strong><p>공정관리자로 취업이 <br>가능한 건설인재를 <br>양성하는 과정</p><button type="button" class="btn-moreview">MORE VIEW</button></div>
 								</li>
-								<li class="on">
+								<li>
 									<span class="pic"><img src="images/main/img_course_05.jpg"></span><strong>건설공사관리</strong>
 									<div><strong>건설공사관리</strong><p>건설현장에 시공 및 공무,<br>공정관리자로 취업이 가능한<br>건설인재를 양성하는 과정</p><button type="button" class="btn-moreview">MORE VIEW</button></div>
 								</li>
@@ -205,9 +255,9 @@
 							</div>
 							<div class="recruitlist">
 								<ul id="grid">
-									<li class="active">
+									<li>
 										<strong class="ctg">건축</strong>
-										<span class="dday">D-1</span>
+										<span class="dday orange">D-1</span>
 										<div>
 											<em>그룹사</em><strong>현대엔지니어링</strong>
 											<p>전체를 이해하고 진취적으로 협업하는 전문가분을 모집합니다.</p>
@@ -215,7 +265,7 @@
 									</li>
 									<li>
 										<strong class="ctg">BIM설계</strong>
-										<span class="dday">D-99</span>
+										<span class="dday orange">D-4</span>
 										<div>
 											<em>현대건설</em><strong>한국관리서비스</strong>
 											<p>전체를 이해하고 진취적으로 협업하는 전문가분을 모집합니다.</p>
@@ -223,7 +273,7 @@
 									</li>
 									<li>
 										<strong class="ctg">건설안전관리</strong>
-										<span class="dday">D-5</span>
+										<span class="dday">D-30</span>
 										<div>
 											<em>협력업체</em><strong>우림플랜트</strong>
 											<p>전체를 이해하고 진취적으로 협업하는 전문가분을 모집합니다모집합니다 모집합니다.</p>
@@ -231,7 +281,7 @@
 									</li>
 									<li>
 										<strong class="ctg">품질관리</strong>
-										<span class="dday">D-10</span>
+										<span class="dday">D-32</span>
 										<div>
 											<em>그룹사</em><strong>현대제철</strong>
 											<p>전체를 이해하고 진취적으로 협업하는 전문가분을 모집합니다.</p>
@@ -239,7 +289,7 @@
 									</li>
 									<li>
 										<strong class="ctg">건축설계</strong>
-										<span class="dday">D-10</span>
+										<span class="dday">D-40</span>
 										<div>
 											<em>그룹사</em><strong>화성기아차공장</strong>
 											<p>전체를 이해하고 진취적으로 협업하는 전문가분을 모집합니다모집합니다모집합니다 모집합니다.</p>
@@ -262,7 +312,10 @@
 					<div class="innerbox">
 						<div class="titlebox">
 							<h1><strong>공지사항</strong><span>NEWS</span></h1>
-							<span class="btnset"></span>
+							<span class="btnset">
+								<button type="button" class="slick-prev" title="이전">이전</button>
+								<button type="button" class="slick-next" title="다음">다음</button>
+							</span>
 						</div>
 						<div class="noticelist">
 							<ul>
@@ -270,54 +323,32 @@
 									<dl>
 										<dt>
 											<span>2023.02.23</span>
-											<strong>기술교육원 공사로 인한 운영중지 <br>2.27~3.3 안내</strong>
+											<strong>기술교육원 공사로 인한 운영중지<br>2.27~3.3 안내</strong>
 										</dt>
 										<dd>
-											<p>현대건설 기술교육원입니다. <br>기술교육원 전기실 수변전설비 교체 공사에 따라 <br>다음과 같이 운영을 중지하오니...</p>
+											<p>현대건설 기술교육원입니다.<br>기술교육원 전기실 수변전설비 교체 공사에 따라<br>다음과 같이 운영을 중지하오니 교육생모집 ...</p>
 										</dd>
 									</dl>
 								</li>
 								<li>
 									<dl>
 										<dt>
-											<span>2023.01.10</span>
-											<strong>STEP</strong>
+											<span>2023.01.20</span>
+											<strong>STEP 개통 3주년 기념<br>이러닝 콘텐츠 공모전 최우수상 수상</strong>
 										</dt>
 										<dd>
-											<p>현대건설 기술교육원입니다. <br>본 기관에서 기쁜소식이 있어 알려드립니다.한국기술교육<br>본 기관에서 기쁜소식이 있어 알려드립니다.한국기술교육</p>
+											<p>현대건설 기술교육원입니다.<br>본 기관에 또 기쁜 소식이 있어 알려드립니다.<br>한국기술교육대학교 온라인평생교육원에서 ...</p>
 										</dd>
 									</dl>
 								</li>
 								<li>
 									<dl>
 										<dt>
-											<span>2023.01.05</span>
-											<strong>기술교육원 공사로 인한 운영중지 <br>2.27~3.3 안내</strong>
+											<span>2022.12.01</span>
+											<strong>2022년 12월 개강<br>건설품질관리 과정 폐강 알림</strong>
 										</dt>
 										<dd>
-											<p>현대건설 기술교육원입니다. <br>23년 3월 개강예정인 [건설품질관리] 과정 지원자가...</p>
-										</dd>
-									</dl>
-								</li>
-								<li>
-									<dl>
-										<dt>
-											<span>2023.01.10</span>
-											<strong>STEP</strong>
-										</dt>
-										<dd>
-											<p>현대건설 기술교육원입니다. <br>본 기관에서 기쁜소식이 있어 알려드립니다. <br>한국기술교육대학교....</p>
-										</dd>
-									</dl>
-								</li>
-								<li>
-									<dl>
-										<dt>
-											<span>2023.01.05</span>
-											<strong>기술교육원 공사로 인한 운영중지 <br>2.27~3.3 안내</strong>
-										</dt>
-										<dd>
-											<p>현대건설 기술교육원입니다. <br>23년 3월 개강예정인 [건설품질관리] 과정 <br>지원자가 많지 않아 정원 미달이 예상...</p>
+											<p>현대건설 기술교육원입니다.<br>22년 12월 개강 예정인 [건설품질관리] 과정<br>지원자가 많지 않아 정원 미달이 예상되는 ...</p>
 										</dd>
 									</dl>
 								</li>
