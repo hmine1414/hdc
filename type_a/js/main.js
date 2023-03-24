@@ -93,7 +93,7 @@ function toggleBoard(Idx){
 
 // load function
 $(function(){
-	/* setTimeout(function() {
+	setTimeout(function() {
 		$('.fix-intro').addClass('bg-none');
 	}, 300);    
 	setTimeout(function() {
@@ -110,18 +110,7 @@ $(function(){
 				$(".edu-news").removeClass("open");
 			}, 2500);
 		}, 1500);
-	}, 3500); */
-
-	$('body').removeClass('hidden');
-	$('.fix-intro').addClass('hidden');
-	$("#wrap").removeClass('init'); 
-	$('.header').removeClass('hidden');
-	setTimeout(function(){
-		$(".edu-news").addClass("open");
-		setTimeout(function(){		
-			$(".edu-news").removeClass("open");
-		}, 2500);
-	}, 1500);
+	}, 3500);
 
 	
 	// text animation
