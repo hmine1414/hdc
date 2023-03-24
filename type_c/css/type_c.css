@@ -1,0 +1,23 @@
+@charset "utf-8";
+@import url("reset.css");
+
+/* ----- visual ----- */
+#wrap {width:100%}
+#wrap .contents {width:100%}
+#wrap .contents #main {width:100%}
+
+.section-wrap .mainvisual {position:relative; width:100%; margin:0 0 150px 0}
+.section-wrap .mainvisual .visual-img {position:relative; z-index:15; width:100%; height:890px; background:url('../images/img_mainvisual.png') no-repeat 50%; background-size:cover; font-size:0}
+.section-wrap .mainvisual .visual-img h1 {position:absolute; left:calc((100% - 1280px) / 2); top:50%; height:260px; margin:-130px 0 0 0}
+.section-wrap .mainvisual .menu-go {position:relative; z-index:20; width:1280px; margin:-90px auto 0; font-size:0}
+.section-wrap .mainvisual .menu-go img {box-shadow:10px 10px 30px rgba(0,0,0,0.03), -10px -10px 30px rgba(0,0,0,0.03)}
+.section-wrap .courselist {width:100%; padding-left:calc((100% - 1280px) / 2); padding-bottom:140px}
+.section-wrap .notice {padding:120px 0; background:#fafafa}
+.section-wrap .notice .notice-img {width:1280px; margin:0 auto}
+.section-wrap .recruitesupport {padding:120px 0; background:#fff}
+.section-wrap .recruitesupport .recruite-img {width:1280px; margin:0 auto}
+.section-wrap .banner-apply {position:relative; width:100%; height:360px; background:url('../images/bg_bannerline.jpg') repeat-x; font-size:0}
+.section-wrap .banner-apply::after {position:absolute; right:0; top:0; width:815px; height:360px; background:url('../images/bg_mainbanner.jpg') no-repeat 100% 50%; content:''}
+.section-wrap .banner-apply .banner-img {width:1280px; height:100%; margin:0 auto; display:flex; align-items:center; justify-content:flex-start}
+
+

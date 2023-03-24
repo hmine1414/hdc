@@ -1,0 +1,155 @@
+@charset "utf-8";
+
+@font-face {font-family:'Pretendard'; font-weight:100; font-style:normal; src:url('font/Pretendard-ExtraLight.woff') format('woff'), url('font/Pretendard-ExtraLight.woff2') format('woff2'), url('font/Pretendard-ExtraLight.ttf') format('OpenType'); }
+@font-face {font-family:'Pretendard'; font-weight:200; font-style:normal; src:url('font/Pretendard-Light.woff') format('woff'), url('font/Pretendard-Light.woff2') format('woff2'), url('font/Pretendard-Light.ttf') format('OpenType'); }
+@font-face {font-family:'Pretendard'; font-weight:400; font-style:normal; src:url('font/Pretendard-Regular.woff') format('woff'), url('font/Pretendard-Regular.woff2') format('woff2'), url('font/Pretendard-Regular.ttf') format('OpenType'); }
+@font-face {font-family:'Pretendard'; font-weight:700; font-style:normal; src:url('font/Pretendard-Bold.woff') format('woff'), url('font/Pretendard-Bold.woff2') format('woff2'), url('font/Pretendard-Bold.ttf') format('OpenType'); }
+@font-face {font-family:'Pretendard'; font-weight:800; font-style:normal; src:url('font/Pretendard-ExtraBold.woff') format('woff'), url('font/Pretendard-ExtraBold.woff2') format('woff2'), url('font/Pretendard-ExtraBold.ttf') format('OpenType'); }
+
+
+/* reset */
+* {margin:0; padding:0}
+*, :after, :before {-webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box}
+* {word-break:normal;
+	white-space:-moz-pre-wrap; /* Mozilla, since 1999 */
+	white-space:-pre-wrap; /* Opera 4-6 */ 
+	white-space:-o-pre-wrap; /* Opera 7 */ 
+	box-sizing:border-box; 
+}
+html {overflow-y:scroll; font-size:62.5%}
+body {margin:0; padding:0; font-family:'Pretendard','Malgun Gothic', dotum, sans-serif; color:#000; word-break: keep-all}
+html,body {text-size-adjust:none; -webkit-text-size-adjust:none; -moz-text-size-adjust:none; -ms-text-size-adjust:none}
+html, h1, h2, h3, h4, h5, h6, form, fieldset, img {margin:0; padding:0; border:0}
+h1, h2, h3, h4, h5, h6 {font-family:'Pretendard','Malgun Gothic', dotum, sans-serif; font-size:100%}
+body::-webkit-scrollbar {width:17px}
+body::-webkit-scrollbar-thumb {background-color:#b8b8b8}
+body::-webkit-scrollbar-track {background-color:#f1f1f1}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display:block; font-size:100%}
+ul, ol, dl, dt, dd {list-style:none; font-size:100%}
+legend {overflow:hidden; position:absolute; margin:0; padding:0; font-size:0; line-height:0; text-indent:-9999em}
+label, input, button, select, img {font-size:100%; vertical-align:middle; border-radius:0}
+input, button {margin:0; padding:0; font-family:'Pretendard','Malgun Gothic', dotum, sans-serif}
+button {cursor:pointer; border:0}
+textarea, select {font-family:'Pretendard','Malgun Gothic', dotum, sans-serif;font-size:1em}
+select {margin:0; border-radius:0}
+em {font-style:normal}
+p {margin:0; padding:0}
+hr {display:none}
+pre {overflow-x:scroll}
+a {color:#000; text-decoration:none}
+caption, legend {position:absolute; left:-9999%; font-size:0; line-height:0; text-indent:-9999px}
+input[type=text],input[type=password], textarea {-webkit-transition:all 0.30s ease-in-out; -moz-transition:all 0.30s ease-in-out; -ms-transition:all 0.30s ease-in-out; -o-transition:all 0.30s ease-in-out; outline:none}
+input[type=text]:focus,input[type=password]:focus, textarea:focus,select:focus {outline:none !important}
+input[type="submit"] {cursor:pointer}
+
+.placeholdersjs {color:#aaa !important}
+.hide {position:absolute; left:-9999%; font-size:0; line-height:0; text-indent:-9999%}
+.btnset {overflow:visible; display:inline-block !important; outline:none !important; cursor:pointer !important; border-radius:0; text-align:center !important; text-decoration:none !important; vertical-align:middle !important; border:0;
+-webkit-box-sizing:border-box; box-sizing:border-box; -webkit-transition:all 0.3s; transition:all 0.3s; background-color:#fff; -webkit-appearance:none; -moz-appearance:none; -ms-appearance:none; -o-appearance:none; appearance:none}
+
+.ta-c {text-align:center !important}
+.ta-r {text-align:right !important}
+.ta-l {text-align:left !important}
+
+.pt0 {padding-top:0 !important}
+.pb0 {padding-bottom:0 !important}
+.mt0 {margin-top:0 !important}
+.mb0 {margin-bottom:0 !important}
+
+/* Slick Slider */
+.slick-slider {position:relative; display:block; height:100%; -moz-box-sizing:border-box; box-sizing:border-box; -webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none; -webkit-touch-callout:none; -khtml-user-select:none; -ms-touch-action:pan-y; touch-action:pan-y; -webkit-tap-highlight-color:transparent}
+.slick-list {position:relative; display:block; overflow:hidden; width:100%; height:100%; margin:0; padding:0}
+.slick-list.dragging {cursor:crosshair}
+.slick-slider .slick-track,.slick-slider .slick-list {-webkit-transform:translate3d(0, 0, 0); -moz-transform:translate3d(0, 0, 0); -ms-transform:translate3d(0, 0, 0); -o-transform:translate3d(0, 0, 0); transform:translate3d(0, 0, 0)}
+.slick-track {position:relative; top:0; left:0; display:block; width:100%; height:100%}
+.slick-track:before,.slick-track:after {display:table; content:''}
+.slick-track:after {clear:both}
+.slick-loading .slick-track {visibility:hidden}
+.slick-slide {display:none; float:left; width:100%; height:100%; min-height:1px}
+[dir='rtl'] .slick-slide {float:right}
+.slick-slide img {display:block}
+.slick-slide.slick-loading img {display:none}
+.slick-slide.dragging img {pointer-events:none}
+.slick-initialized .slick-slide {display:block}
+.slick-loading .slick-slide {visibility:hidden}
+.slick-vertical .slick-slide {display:block; height:auto; border:1px solid transparent}
+.slick-arrow.slick-hidden {display:none}
+
+/* common */
+.contents overflow: hidden}
+.hidden {overflow: hidden !important; height:100vh !important; height: calc(var(--vh, 1vh) * 100) !important;; position: fixed !important}
+.img-none {display:flex; justify-content:center; align-items:center; position:absolute; left:0; top:0; width:100%; height:100%; background:#f2f2f2}
+.img-none img {position: static !important; max-width:80% !important; width:auto !important; height:auto !important}
+
+/* intro index */
+body.intro {position:relative; width:100%; height:100vh; background:url('../images/bg_intro.png') no-repeat 50% 50%; background-size:cover}
+body.intro::after {position:absolute; left:50%; bottom:3%; width:52px; height:52px; margin-left:-26px; background:url('../images/icon_ucom.png') no-repeat 50%; content:''}
+.intropage {position:absolute; left:50%; top:50%; width:1362px; height:680px; transform: translate(-50%, -50%)}
+.intropage .intro-innerbox {width:1362px; margin:0 auto}
+.intropage .intro-innerbox h1 {display:flex; align-items:flex-end; justify-content:space-between; margin:0 0 70px 0}
+.intropage .intro-innerbox h1 span {color:#fff; font-size:68px; font-weight:800; line-height:75px}
+.intropage .intro-innerbox .indexlist ul {width:100%; height:396px; display:flex; align-items:center; justify-content:space-between}
+.intropage .intro-innerbox .indexlist ul li {height:396px; display:flex; align-items:center; justify-content:center; flex-direction:column}
+.intropage .intro-innerbox .indexlist ul li strong {display:block; margin:0 0 15px 0; font-size:20px; color:#fff; font-weight:700}
+.intropage .intro-innerbox .indexlist ul li .pic {display:block; margin-bottom:40px}
+.intropage .intro-innerbox .indexlist ul li .pic a {display:block}
+.intropage .intro-innerbox .indexlist ul li .pic img {box-shadow:10px 10px 40px rgba(0,0,0,0.15), -10px 0 40px rgba(0,0,0,0.15)}
+.intropage .intro-innerbox .indexlist ul li div a {margin:0 20px; font-size:48px; font-weight:800; color:#386773}
+.intropage .intro-innerbox .indexlist ul li div a.active {color:#fff}
+.intropage .intro-innerbox .indexlist ul li div a:hover {color:#fff}
+
+
+/* layout */
+.header {position:absolute; left:0; top:0; z-index:30; width:100%; height:90px; background:#fff}
+.header .header-inner {position:relative; width:100%; min-width:1262px; height:90px; margin:0 auto; padding:0 40px; display:flex; align-items:center; justify-content:space-between}
+.header .header-inner .logo {width:223px; height:26px}
+.header .header-inner .logo a {display:block; width:223px; height:27px; background:url('../images/common/logo.png') no-repeat 0 0; font-size:0; text-indent:-99999px}
+.header .header-inner ul.topmenu {width:715px; height:30px; display:flex; align-items:center; justify-content:space-between}
+.header .header-inner ul.topmenu li {width:100px; text-align:center}
+.header .header-inner ul.topmenu li a {position:relative; display:inline-block; height:30px; color:#141414; font-size:18px; transition:all 0.2s; line-height:25px; font-weight:700}
+.header .header-inner ul.topmenu li a:hover {color:#00549d}
+.header .header-inner ul.gnb-util {width:140px; height:30px; display:flex; align-items:center; justify-content:space-between}
+.header .header-inner ul.gnb-util li button {width:30px; height:30px; text-indent:-99999px; font-size:0}
+.header .header-inner ul.gnb-util li button.btn-gnb-search {background:url('../images/icon/icon_gnb_search.png') no-repeat 50%}
+.header .header-inner ul.gnb-util li button.btn-gnb-alram {background:url('../images/icon/icon_gnb_alram.png') no-repeat 50%}
+.header .header-inner ul.gnb-util li button.btn-gnb-mypage {background:url('../images/icon/icon_gnb_mypage.png') no-repeat 50%}
+
+.footer {height:520px; padding:125px 0 200px 0; background:#1f1f1f}
+.footer .innerbox {position:relative; width:1500px; margin:0 auto; display:flex; align-items:flex-star; justify-content:space-between}
+.footer .innerbox .btnset {position:absolute; right:0; top:-240px; z-index:20; display:block; width:80px}
+.footer .innerbox .btnset .btn-gotop {width:80px; height:80px; background:#218069; font-size:16px; font-weight:700; color:#fff}
+.footer .innerbox .btnset .btn-counsel {width:80px; height:80px; background:url('../images/common/btn_counsel.jpg'); font-size:0; text-indent:-99999px}
+
+
+/* main layout */
+body.main .header {background:transparent}
+body.main .header .header-inner .logo a {background:url('../images/common/logo_w.png') no-repeat 0 0}
+body.main .header .header-inner ul.topmenu li a {position:relative; display:inline-block; height:30px; color:#fff; font-size:18px; transition:all 0.2s; line-height:25px; font-weight:400}
+body.main .header .header-inner ul.topmenu li a::before {position:absolute; left:0; bottom:0; width:0; height:2px; background:#fff; content:''; transition:all 0.5s}
+body.main .header .header-inner ul.topmenu li a:hover::before {width:100%}
+body.main .header .header-inner ul.gnb-util li button.btn-gnb-search {background:url('../images/icon/icon_gnb_search_w.png') no-repeat 50%}
+body.main .header .header-inner ul.gnb-util li button.btn-gnb-alram {background:url('../images/icon/icon_gnb_alram_w.png') no-repeat 50%}
+body.main .header .header-inner ul.gnb-util li button.btn-gnb-mypage {background:url('../images/icon/icon_gnb_mypage_w.png') no-repeat 50%}
+body.main .footer .innerbox .btnset {top:-165px}
+
+
+/* mobile */
+#mobile-wrap {width:360px; margin:0 auto; font-size:0}
+#mobile-wrap .main-img {display:none}
+#mobile-wrap .main-img.on {display:block}
+#mobile-wrap .sub-img {display:none}
+#mobile-wrap .sub-img.on {display:block}
+
+
+@media all and (max-width:1850px){
+}
+@media all and (max-width:1600px){
+} 
+@media all and (max-width:1240px){  
+} 
+@media all and (max-width:374px){
+	/* html {font-size:8px} */
+}
+
+
+ 
