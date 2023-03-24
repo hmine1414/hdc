@@ -25,20 +25,6 @@ $(".newslist > ul").slick({
 	swipe: true
 });
 
-/* 
-$(".noticelist > ul").slick({
-	slidesToShow: 3,
-	slidesToScroll: 1,
-	arrows: true,
-	appendArrows: $(".dashboard .titlebox .btnset"),
-	dots: false,
-	focusOnSelect: true,
-	touchMove: true,
-	autoplay: true,
-	autoplaySpeed: 10000,
-	swipe: true
-}); */
-
 
 /* counter */
 var options = {
@@ -130,7 +116,7 @@ $('.newslist .slick-prev').on('click', function(){
 
 // load function
 $(function(){
-	/* setTimeout(function() {
+	setTimeout(function() {
 		$('.fix-intro').addClass('bg-none');
 	}, 300);    
 	setTimeout(function() {
@@ -141,13 +127,7 @@ $(function(){
 		$('.fix-intro').addClass('hidden');
 		$("#wrap").removeClass('init'); 
 		$('.header').removeClass('hidden');
-	}, 3500); */
-
-	
-	$('body').removeClass('hidden');
-	$('.fix-intro').addClass('hidden');
-	$("#wrap").removeClass('init'); 
-	$('.header').removeClass('hidden');
+	}, 3500);
 
 	
 	// text animation
